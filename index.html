@@ -1,86 +1,135 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nuances Vivantes</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuances Vivantes</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Barre de navigation -->
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <img src="images/logo.png" alt="Logo Nuances Vivantes">
+                <span>Nuances Vivantes</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#about">Qui sommes-nous ?</a></li>
+                    <li><a href="#collections">Nos collections</a></li>
+                    <li><a href="#locations">Retrouvez-nous</a></li>
+                    <li><a href="#contacts">Contacts</a></li>
+                </ul>
+            </nav>
+            <div class="icons">
+                <a href="#"><img src="images/search-icon.png" alt="Search Icon"></a>
+                <a href="#"><img src="images/cart-icon.png" alt="Cart Icon"></a>
+            </div>
+        </div>
+    </header>
 
-    
-    <!-- Barre de navigation --> 
-    <header>
-        <div class= "navbar"> 
-            <div class= "logo">
-                img src= "logo bas de page.png" alt="Nuance Vivantes logo"> 
-                <span>Nuances Vivantes</span>
-            </div> 
-            <nav>
-                <ul>
-                    <li><a href="#about">Qui sommes nous ?</a></li>
-                    <li><a href="#collections">Nos collections</a></li>
-                    <li><a href="#locations">Retrouvez-nous</a></li>
-                    <li><a href="#contacts">Contacts</a></li>
-                </ul>
-            </nav>
-        <div class="icons">
-            <a href="#"><img src="" alt="Search Icon></a> 
-            <a href="#"><img src="" alt="Cart Icon></a> 
-        </div>                      
-    </header>
-                            
-    <!-- Section Hero -->
-    <section id="hero"> 
-                <-- Image de fond -->
-                <div class= "hero-image">
-                  <img src="image/gris.png" alt="Bloc gris avec arrière-plan">
-        </div>
-        <!-- Contenu au-dessus de l'image -->
-        <div class="hero-content">
-            <h1>Nuances Vivantes</h1>
-            <a href=
-        <!-- Section Qui sommes-nous -->
-    <section id="about">
-        <h2>Qui sommes-nous ?</h2>
-        <p>Nuances Vivantes est une galerie d'art fondée en 2016 avec pour mission de révéler et de soutenir de jeunes talents. Cet espace a été conçu comme un lieu de rencontre entre l'art contemporain et les œuvres plus classiques, où chaque artiste, émergent ou confirmé, a une chance de faire vibrer son art.
+    <!-- Section Hero -->
+    <main>
+        <section id="hero">
+            <div class="hero-content">
+                <h1>Nuances Vivantes</h1>
+                <a href="#about" class="btn">Déroule pour découvrir</a>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
 
-            À l’origine de ce projet, Clara Elvin, une passionnée d'art, a fondé Nuances Vivantes pour offrir un lieu d'expression ouvert à la diversité artistique. Elle insuffle à chaque exposition une touche de créativité novatrice, garantissant que chaque visite soit une expérience unique.
-            Chez Nuances Vivantes, chaque exposition est une immersion dans un univers où les émotions et les œuvres se rencontrent, créant un dialogue authentique entre l'art et le public.</p>
-    </section>
 
-    <!-- Section Nos collections -->
-    <section id="collections">
-        <h2>Nos collections</h2>
-        <div class="collection-gallery">
-            <img src="jaune.jpg" alt="Collection Image 1" class="photo-medium">
-            <img src="vert.jpg" alt="Collection Image 2" class="photo-medium">
-            <img src="red.jpg" alt="Collection Image 3" class="photo-medium">
-        </div>
-    </section>
+        <!-- Image de fond -->
+        <div class="hero-image">
+            <img src="gris.png" alt="Blocs gris avec arrière-plan">
+        </div>
+        <!-- Contenu au-dessus de l'image -->
+        <div class="hero-content">
+            <h1>Nuances Vivantes</h1>
+            <a href="#about" class="btn">Déroule pour découvrir</a>
+        </div>
+    </section>
+    
 
-    <!-- Section Retrouvez-nous -->
-    <section id="locations">
-        <h2>Retrouvez-nous</h2>
-        <div class="location-gallery">
-            <img src="images/location1.jpg" alt="Location 1" class="photo-small">
-            <img src="images/location2.jpg" alt="Location 2" class="photo-small">
-            <img src="images/location3.jpg" alt="Location 3" class="photo-small">
-        </div>
-    </section>
+        <!-- Section Qui sommes-nous -->
+        <section id="about">
+            <h2>Qui sommes-nous ?</h2>
+            <p>
+                Nuances Vivantes est une galerie d'art fondée en 2016 avec pour mission de révéler et de soutenir
+                de jeunes talents. Cet espace a été conçu comme un lieu de rencontre entre l'art contemporain et
+                les œuvres plus classiques, où chaque artiste, émergent ou confirmé, a une chance de faire vibrer
+                son art.
+            </p>
+        </section>
 
-    <!-- Footer avec contacts et réseaux sociaux -->
-    <footer>
-        <section id="contact">
-            <h3>Contacts</h3>
-            <p>24 Rue Dantes, Nice, 06100</p>
-            <p>Email: nuancesvivantes@gmail.com</p>
-        </section>
-        <section id="social">
-            <h3>Suivez-nous</h3>
-            <p>Liens des réseaux sociaux</p>
-        </section>
-    </footer>
+        <!-- Section Collections -->
+        <section id="collections">
+            <h2>Nos collections</h2>
+            <a href="#more" class="btn">Voir plus</a>
+            <div class="collection-grid">
+                <div class="collection-item">
+                    <img src="Jaune.png" alt="The joyful yellow">
+                    <h3>The joyful yellow</h3>
+                </div>
+                <div class="collection-item">
+                    <img src="green.png" alt="The cadmium green">
+                    <h3>The cadmium green</h3>
+                </div>
+                <div class="collection-item">
+                    <img src="red.png" alt="The power red">
+                    <h3>The power red</h3>
+                </div>
+            </div>
+        </section>
 
+        <!-- Section Retrouvez-nous -->
+        <section id="locations">
+            <h2>Retrouvez-nous :</h2>
+            <div class="location-grid">
+                <div class="location-item">
+                    <img src="gallerie 1.png" alt="Galerie à Paris">
+                    <h3>Paris</h3>
+                    <p>Lundi - Jeudi, 10:00 - 18:30</p>
+                </div>
+                <div class="location-item">
+                    <img src="gallerie 2.png" alt="Galerie à Bordeaux">
+                    <h3>Bordeaux</h3>
+                    <p>Mardi - Dimanche, 9:30 - 17:00</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Pied de page -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section contacts">
+                <h3>Contacts</h3>
+                <p>24 Rue Dantes<br>Nice, 06100<br>Nuancesvivantes@gmail.com</p>
+            </div>
+            <div class="footer-section logo">
+                <h3>Nuances Vivantes</h3>
+                <img src="images/logo.png" alt="Nuances Vivantes Logo">
+            </div>
+            <div class="footer-section social">
+                <h3>Suivez-nous</h3>
+                <div class="social-icons">
+                    <a href="#"><img src="images/facebook-icon.png" alt="Facebook"></a>
+                    <a href="#"><img src="images/instagram-icon.png" alt="Instagram"></a>
+                    <a href="#"><img src="images/pinterest-icon.png" alt="Pinterest"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>
+                Tous droits réservés © 2024 Nuances Vivantes<br>
+                Créé et géré par Clara Elvin.<br>
+                Toute reproduction, même partielle, est interdite sans autorisation préalable.
+            </p>
+        </div>
+    </footer>
 </body>
 </html>
